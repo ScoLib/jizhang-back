@@ -7,11 +7,11 @@ use Prettus\Repository\Contracts\Transformable;
 use Prettus\Repository\Traits\TransformableTrait;
 
 /**
- * Class AccountBook.
+ * Class Category.
  *
  * @package namespace Sco\Models;
  */
-class AccountBook extends Model implements Transformable
+class Category extends Model implements Transformable
 {
     use TransformableTrait;
 
@@ -22,8 +22,4 @@ class AccountBook extends Model implements Transformable
      */
     protected $fillable = [];
 
-    public function type()
-    {
-        return $this->belongsTo(AccountBookType::class);
-    }
 }

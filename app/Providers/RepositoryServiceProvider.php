@@ -25,6 +25,8 @@ class RepositoryServiceProvider extends ServiceProvider
     {
         $this->app->bind(\Sco\Contracts\Repositories\AccountBookTypeRepository::class, \Sco\Repositories\AccountBookTypeRepositoryEloquent::class);
         $this->app->bind(\Sco\Contracts\Repositories\AccountBookRepository::class, \Sco\Repositories\AccountBookRepositoryEloquent::class);
+        $this->app->bind(\Sco\Contracts\Repositories\CategoryRepository::class, \Sco\Repositories\CategoryRepositoryEloquent::class);
+        $this->app->bind(\Sco\Contracts\Repositories\AssetTypeRepository::class, \Sco\Repositories\AssetTypeRepositoryEloquent::class);
         //:end-bindings:
     }
 }
